@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>div dan Span</title>
-    <link rel="icon" type="img/png" href="icon.png" sizes="16x16"/>
-</head>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel='styleheet' href="css/main.css">
-<body>
-    <div id="header">
-        <h1>Judul/header website</h1>
-    </div>
-    <div>
-        <div>
-            <ul>
-                <li><a href="#C4">Jump to Chapter 4</a></li>
-                <li><a href="#C10">ump to Chapter 10</a></li>
-                <li><a href="#C20">ump to Chapter 20</a></li>
-                <p> Ubah Dengan Kesimpulan ujicoba disini</p>
-            </ul>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Div dan Span</title>
+        <link rel="icon" type="img/png" href="gambar/icon.png" size="16x16"/>
+        <meta name="viewport" content="width=device-width, initial-sacle=1">
+        <link rel='stylesheet' href="css/main.css"> 
+    </head>
+
+    <body> 
+        <!-- header-->
+        <div id="header">
+            <h1>Diary</h1>
         </div>
+
+        <!--Isi disini id="main"-->
         <div>
-            <p><bold>Aenta Putri Maharani_233307034</bold></p>
+            <!--isi link disini id link-->
+            <div>
+                <ul>
+                    <li><a href="#"> London </a></li>
+                    <li><a href="#"> Paris </a></li>
+                    <li><a href="#"> Tokyo </a></li>
+                </ul>
+            </div>
+                <!--isi content disini-->
+            <div>
+                <p>Cara menggunakan style warna dengan nama "Tomato"</p>
+                <h1 style="background-color: tomato;">Tomato</h1>
+
+                <p>Cara menggunakan warna style dengan rgb, hex, dan hsl dengan nilai yang sama tomato:</p>
+                <h1 style="background-color: rgb(255, 99, 71);">rgb (255, 99, 71)</h1>
+                <h1 style="background-color: #ff6347;">#ff6347</h1>
+                <h1 style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+                <p>Menggunakan "Tomato", dengan tingkat transparasi 50%:</p>
+                <h1 style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+                <h1 style="background-color: hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+            </div>
         </div>
-    </div>
-    <div id="footer">
-        <i><link rel href="arenta12345@gmail.com"> _nim233307034 </i>
-    </div>
-    <h2> Chapter 1</h2>
-    <p> This Chapter explains</p>
 
-    <h2> Chapter 2</h2>
-    <p> This Chapter explains</p>
+        <div> <!-- footer -->
+             <i>copyright@arenta_233307034</i>
+        </div>
 
-    <h2> Chapter 3</h2>
-    <p> This Chapter explains</p>
-
-    <h2 id="C4">Chapter 4</h2>
-    <p> This Chapter explains</p>
-</body>
+    </body>
 </html>
