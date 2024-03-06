@@ -11,15 +11,10 @@
         font-family: 'Times New Roman', Times, serif;
       }
     </style>
-    <script>
-      function resetForm() {
-        document.getElementById("myForm").reset();
-      }
-    </script>
   </head>
   <body>
     <div id="content">
-      <form id="myForm" method="post" action="proses.php">
+      <form id="registrationForm" method="post" action="proses.php">
         <fieldset>
           <legend>Form Pendaftaran Mahasiswa Baru</legend>
           <table>
@@ -27,16 +22,22 @@
               <td><label for="nama">Nama lengkap</label></td>
               <td><input type="text" id="nama" name="nama" required></td>
             </tr>
-            <!-- sisa kode formulir -->
+            <!-- your other form inputs here -->
             <tr>
               <td colspan="2">
                 <input type="submit" id="daftar" name="daftar" />
-                <input type="button" id="batal" name="batal" value="Reset" onclick="resetForm()" />
+                <input type="button" id="batal" value="Batal" onclick="resetForm();" />
               </td>
             </tr>
           </table>
         </fieldset>
       </form>
     </div>
+
+    <script>
+      function resetForm() {
+        document.getElementById("registrationForm").reset();
+      }
+    </script>
   </body>
 </html>
