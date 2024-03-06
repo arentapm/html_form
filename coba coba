@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Div dan Span</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+      }
+    </style>
+    <script>
+      function resetForm() {
+        document.getElementById("myForm").reset();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="content">
+      <form id="myForm" method="post" action="proses.php">
+        <fieldset>
+          <legend>Form Pendaftaran Mahasiswa Baru</legend>
+          <table>
+            <tr>
+              <td><label for="nama">Nama lengkap</label></td>
+              <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <!-- sisa kode formulir -->
+            <tr>
+              <td colspan="2">
+                <input type="submit" id="daftar" name="daftar" />
+                <input type="button" id="batal" name="batal" value="Reset" onclick="resetForm()" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
