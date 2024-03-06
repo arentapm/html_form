@@ -1,66 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Div dan Span</title>
+        <link rel="icon" type="img/png" href="gambar/icon.png" size="16x16"/>
+        <meta name="viewport" content="width=device-width, initial-sacle=1">
+        <link rel='stylesheet' href="css/main.css"> 
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Div dan Span</title>
-    <link rel="icon" type="img/png" href="gambar/icon.png" size="16x16" />
-    <meta name="viewport" content="width=device-width, initial-sacle=1">
-    <link rel='stylesheet' href="css/main.css">
-</head>
-
-<body>
-    <!-- header-->
-    <div id="header">
-        <h1>Belajar HTML</h1>
-    </div>
-
-    <!--Isi disini id="main"-->
-    <div id="main">
-        <!--isi link disini id link-->
-        <div id="link">
-            <ul>
-                <li><a href="#">London</a></li>
-                <li><a href="#">Paris</a></li>
-                <li><a href="#">Tokyo</a></li>
-            </ul>
+    <body> 
+        <!-- header-->
+        <div id="header">
+            <h1>Diary</h1>
         </div>
-        <!--isi content disini-->
-        <div id="content">
-            <p>Cara menggunakan style warna dengan nama "Tomato"</p>
-            <h1 style="background-color: tomato;">Tomato</h1>
 
-            <p>Cara menggunakan warna style dengan rgb, hex, dan hsl dengan nilai yang sama tomato:</p>
-            <h1 style="background-color: rgb(255, 99, 71);">rgb (255, 99, 71)</h1>
-            <h1 style="background-color: #ff6347;">#ff6347</h1>
-            <h1 style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+        <!--Isi disini id="main"-->
+        <div>
+            <!--isi link disini id link-->
+            <div>
+                <ul>
+                    <li><a href="#"> London </a></li>
+                    <li><a href="#"> Paris </a></li>
+                    <li><a href="#"> Tokyo </a></li>
+                </ul>
+            </div>
+                <!--isi content disini-->
+            <div>
+                    <img src="gambar/workplace.jpg" alt="Workplace" usemap="#petagambar">
 
-            <p>Menggunakan "Tomato", dengan tingkat transparasi 50%:</p>
-            <h1 style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-            <h1 style="background-color: hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+                    <map name="petagambar">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+                        <area shape="rect" coords="290,172,333,350" alt="Photo" href="https://en.wikipedia.org/wiki/Telephone">
+                        <area shape="circle" coords="337,300,44" alt="Coffe" href="https://en.wikipedia.org/wiki/Coffe">
+                    </map>
+                </div>
 
-            <!-- style warna objek -->
-            <h1 style="color: blue">color: blue;</h1>
-            <p style="color: red">color: red;</p>
-
-            <!-- style font -->
-            <h1 style="font-family: Verdana">Heading dengan font verdana</h1>
-            <p style="font-family: Courier">Paragraf dengan font Courier</p>
-
-            <!-- style ukuran font -->
-            <h1 style="font-size: 300%">Ukuran font 300%</h1>
-            <p style="font-size: 160%">Ukuran font 160%</p>
-
-            <!-- style posisi objek -->
-            <h1 style="text-align: center">Heading dengan teks tengah</h1>
-            <p style="text-align: center">Paragraf dengan posisi teks tengah</p>
+                <!--isi footer disini-->
+        <div>
+            <i>copyright@erlinaputri_233307046</i>
         </div>
-    </div>
-
-    <div> <!-- footer -->
-        <i>copyright@arenta_233307034</i>
-    </div>
-
-</body>
-
+    </body>
 </html>
